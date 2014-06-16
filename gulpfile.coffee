@@ -10,7 +10,7 @@ gulp.task 'css', ->
             paths: ['./lib']
             compress: false
         }))
-        .pipe(gulp.dest('./'))
+        .pipe(gulp.dest('./lib/'))
 
 
 gulp.task 'templates', ->
@@ -20,6 +20,11 @@ gulp.task 'templates', ->
 
 
 gulp.task 'default', ->
+    gulp.run 'css'
+    gulp.run 'templates'
+
+
+gulp.task 'watch', ->
     gulp.watch './lib/**/*.less', ->
         gulp.run 'css'
 
