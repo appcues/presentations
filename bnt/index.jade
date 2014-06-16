@@ -1,7 +1,7 @@
 doctype html
 html(lang="en")
     head
-        title Pushing the Limits of Mobile
+        title Creating WOW Moments
         meta(name="viewport", content="width=1024")
         link(href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic|Open+Sans:400italic,600italic,700italic,400,600,700', rel='stylesheet', type='text/css')
         link(href='../lib/foundation.min.css', rel='stylesheet')
@@ -10,20 +10,47 @@ html(lang="en")
     body.impress-not-supported
         #impress
 
-            .step.slide(data-x='-2000')
+            .step.slide(data-x='-4000')
+                img(src='http://www.gravatar.com/avatar/2146b557530c4c38c84c93113ff210c3.png?s=200', width='100', style='box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5); border-radius: 50%')
                 h1 Jonathan Kim
                 h3 @hijonathan
 
+            .step.slide(data-x='-2000')
+                img(src='http://appcues.com/images/logos/mark-angle.png', width='80', style='border-radius: 4px; border: 2px solid #428bca; padding: 14px 12px')
+                h1 Appcues
+                h3 @appcues
+
             .step.slide.accented(data-x='0')
-                h1 Pushing the Limits of (Mobile) Email
+                h1 Let's Talk About WOW
 
             .step.slide(data-x='2000')
+                img(src='./images/wow.jpg', width='600')
+
+            .step.slide(data-x='4000')
+                h2.serif.text-left user onboarding
+                blockquote The deliberate process of turning a newbie into an expert.
+
+            .step.slide(style='width: 800px', data-x='2000', data-y='-1000', data-z='500', data-scale='6')
+                h4.label-box Business model #1
+                h2 Make something our customer's customers absolutely love.
+
+            .step.slide(style='width: 800px', data-x='8000', data-y='-1000', data-z='500', data-scale='6')
+                h4.label-box Business model #2
+                h2
+                    | Help everyone be a better designer.
+                    br
+                    br
+
+            .step.slide(data-x='6000')
+                h1 And we're hiring.
+
+
+
+            .step.slide(data-x='0', data-y='2000')
                 h1.accent Questions?
 
             //- #fin.step.slide.accented(data-x='1500', data-y='8000', data-z='3000', data-scale='4')
             //-     h1 Thank you
-
-            #overview.step(data-x='0', data-y='1000', data-z='3000', data-scale='10')
 
         script(type='text/javascript', src='../lib/impress.js')
         script.

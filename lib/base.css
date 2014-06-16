@@ -1,6 +1,9 @@
 .accent {
   color: #2ba6cb;
 }
+.serif {
+  font-family: Merriweather, Georgia, serif;
+}
 body {
   font-size: 100%;
 }
@@ -86,6 +89,14 @@ blockquote + .attrib {
 }
 .slide table td:first-child {
   text-align: right;
+}
+.slide .label-box {
+  background-color: #2ba6cb;
+  display: inline-block;
+  padding: 0.1em;
+  text-align: center;
+  font-weight: bold;
+  color: white;
 }
 .tweet {
   border: 1px solid #cccccc;

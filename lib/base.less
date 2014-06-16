@@ -1,7 +1,12 @@
 @accent: #2ba6cb;
+@serif: Merriweather, Georgia, serif;
 
 .accent {
     color: @accent;
+}
+
+.serif {
+    font-family: @serif;
 }
 
 body {
@@ -21,7 +26,7 @@ blockquote {
     font-size: 2em;
     padding: 0 0 0 1em;
     font-style: italic;
-    font-family: Merriweather, Georgia, serif;
+    font-family: @serif;
     text-align: left;
     + .attrib {
         font-size: 2em;
@@ -58,7 +63,6 @@ ul li {
         width: 700px;
     }
     &.numbered-set {
-        &:extend(.jumbo);
         .count {
             font-size: 10em;
             background-color: @accent;
@@ -93,6 +97,15 @@ ul li {
                 text-align: right;
             }
         }
+    }
+
+    .label-box {
+        background-color: @accent;
+        display: inline-block;
+        padding: 0.1em;
+        text-align: center;
+        font-weight: bold;
+        color: white;
     }
 }
 
