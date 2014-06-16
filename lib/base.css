@@ -1,0 +1,102 @@
+.accent {
+  color: #2ba6cb;
+}
+body {
+  font-size: 100%;
+}
+h1 {
+  font-size: 4em;
+}
+blockquote {
+  border-left: 0.3em solid #2ba6cb;
+  font-size: 2em;
+  padding: 0 0 0 1em;
+  font-style: italic;
+  font-family: Georgia;
+  text-align: left;
+}
+blockquote + .attrib {
+  font-size: 2em;
+  text-align: left;
+  font-weight: bold;
+  margin-top: 1.2em;
+}
+.slide ul li {
+  list-style-type: none;
+}
+.gist-file .highlight {
+  background-color: transparent;
+}
+.step {
+  min-width: 600px;
+}
+.slide {
+  padding: 20px;
+  text-align: center;
+}
+.slide.accented {
+  background-color: #2ba6cb;
+}
+.slide.accented * {
+  color: white;
+}
+.slide.jumbo {
+  width: 700px;
+}
+.slide.numbered-set .count {
+  font-size: 10em;
+  background-color: #2ba6cb;
+  display: inline-block;
+  padding: 0.1em;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  float: left;
+  margin-right: 0.2em;
+}
+.slide.numbered-set h1 {
+  text-align: left;
+  margin-top: -12px;
+}
+.slide.iframe {
+  width: 700px;
+}
+.slide.iframe iframe {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  border: none;
+  box-shadow: 0px 0px 12px #cccccc;
+}
+.slide.future-set {
+  height: 600px;
+}
+.slide table {
+  margin: 0 auto;
+}
+.slide table td {
+  vertical-align: middle;
+}
+.slide table td:first-child {
+  text-align: right;
+}
+.tweet {
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  padding: 10px 0;
+}
+#big-picture {
+  width: 1000px;
+}
+#big-picture h1,
+#big-picture h2 {
+  margin: 0;
+}
+#big-picture h1 {
+  font-size: 6em;
+  border-bottom: 5px solid $accent;
+  display: inline;
+}
+#big-picture h2 {
+  color: #666666;
+}
