@@ -4,6 +4,16 @@
 body {
   font-size: 100%;
 }
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: Open Sans, Source Sans Pro, Helvetica, Arial, sans-serif;
+}
 h1 {
   font-size: 4em;
 }
@@ -12,7 +22,7 @@ blockquote {
   font-size: 2em;
   padding: 0 0 0 1em;
   font-style: italic;
-  font-family: Georgia;
+  font-family: Merriweather, Georgia, serif;
   text-align: left;
 }
 blockquote + .attrib {
@@ -68,9 +78,6 @@ blockquote + .attrib {
   border: none;
   box-shadow: 0px 0px 12px #cccccc;
 }
-.slide.future-set {
-  height: 600px;
-}
 .slide table {
   margin: 0 auto;
 }
@@ -84,19 +91,4 @@ blockquote + .attrib {
   border: 1px solid #cccccc;
   border-radius: 6px;
   padding: 10px 0;
-}
-#big-picture {
-  width: 1000px;
-}
-#big-picture h1,
-#big-picture h2 {
-  margin: 0;
-}
-#big-picture h1 {
-  font-size: 6em;
-  border-bottom: 5px solid $accent;
-  display: inline;
-}
-#big-picture h2 {
-  color: #666666;
 }
