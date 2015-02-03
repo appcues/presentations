@@ -14,9 +14,12 @@ gulp.task 'css', ->
 
 
 gulp.task 'templates', ->
-    gulp.src(['./bnt/*.jade'])
-        .pipe(jade())
-        .pipe(gulp.dest('./bnt/'))
+    gulp.src(['./p/**/*.jade'])
+        .pipe(jade({
+            locals:
+                ASSET_PATH: '../../lib'
+        }))
+        .pipe(gulp.dest('./p/'))
 
 
 gulp.task 'default', ->
@@ -28,5 +31,5 @@ gulp.task 'watch', ->
     gulp.watch './lib/**/*.less', ->
         gulp.run 'css'
 
-    gulp.watch './bnt/**/*.jade', ->
+    gulp.watch './p/**/*.jade', ->
         gulp.run 'templates'

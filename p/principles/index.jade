@@ -1,0 +1,58 @@
+doctype html
+html(lang="en")
+    head
+        title Creating WOW Moments
+        meta(name="viewport", content="width=1024")
+        link(href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic|Open+Sans:400italic,600italic,700italic,400,600,700', rel='stylesheet', type='text/css')
+        link(href='#{ASSET_PATH}/foundation.min.css', rel='stylesheet')
+        link(href='#{ASSET_PATH}/style.css', rel='stylesheet')
+
+    body.impress-not-supported
+        #impress
+
+            .step.slide(data-x='-4000')
+                img(src='http://www.gravatar.com/avatar/2146b557530c4c38c84c93113ff210c3.png?s=200', width='100', style='box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5); border-radius: 50%')
+                h1 Jonathan Kim
+                h3 @hijonathan
+
+            .step.slide(data-x='-2000')
+                img(src='http://appcues.com/images/logos/mark-angle.png', width='80', style='border-radius: 4px; border: 2px solid #428bca; padding: 14px 12px')
+                h1 Appcues
+                h3 @appcues
+                p.small.accent *We are hiring
+
+            .step.slide.accented(data-x='0')
+                h1 Let's Talk About WOW
+
+            .step.slide(data-x='2000')
+                img(src='#{ASSET_PATH}/images/wow.jpg', width='600')
+
+            //- .step.slide(data-x='4000')
+            //-     h2.serif.text-left user onboarding
+            //-     blockquote The deliberate process of turning a newbie into an expert.
+
+            .step.slide(data-x='6000')
+                img(src='http://appcues.com/images/zendesk.png')
+                h2 Proactive Support Calls
+                p Zendesk found that human interaction was critical to customer success.
+
+            .step.slide(data-x='6000', data-y='500')
+                h2 What's important?
+                div.text-left
+                    p
+                        span.small.label-box &nbsp;#1&nbsp;
+                        |  How do my most engaged customers use my product?
+
+                    p
+                        span.small.label-box &nbsp;#2&nbsp;
+                        |  What onboarding steps do my most successful customers share?
+                    p
+                        span.small.label-box &nbsp;#3&nbsp;
+                        |  What's the difference between successful customers and unsuccessful ones?
+
+            //- #fin.step.slide.accented(data-x='1500', data-y='8000', data-z='3000', data-scale='4')
+            //-     h1 Thank you
+
+        script(type='text/javascript', src='#{ASSET_PATH}/impress.js')
+        script.
+            impress().init();
