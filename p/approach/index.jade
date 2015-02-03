@@ -1,0 +1,112 @@
+doctype html
+html(lang="en")
+    head
+        title Approaching User Onboarding
+        meta(name="viewport", content="width=1024")
+        link(href='http://fonts.googleapis.com/css?family=Lato:100,100italic,400|Source+Sans+Pro:400,700,400italic,700italic|Open+Sans:400italic,600italic,700italic,400,600,700', rel='stylesheet', type='text/css')
+        link(href='#{ASSET_PATH}/foundation.min.css', rel='stylesheet')
+        link(href='#{ASSET_PATH}/style.css', rel='stylesheet')
+
+    body.impress-not-supported
+        #impress
+
+            .step.slide(data-x='-4000')
+                img(src='http://www.gravatar.com/avatar/2146b557530c4c38c84c93113ff210c3.png?s=200', width='100', style='box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5); border-radius: 50%')
+                h1 Jonathan Kim
+                h3 @hijonathan
+
+            .step.slide(data-x='-2000')
+                img(src='http://appcues.com/images/logos/mark-angle.png', width='80', style='border-radius: 4px; border: 2px solid #428bca; padding: 14px 12px')
+                h1 Appcues
+                h3 @appcues
+                p.small.accent *We are hiring
+
+            .step.slide.accented(data-x='0')
+                h1 Questions Before We Start
+
+            .step.slide(data-x='2000')
+                h2 What's the most valuable thing about my product?
+
+            .step.slide(data-x='4000')
+                h2 How long does it typically take to onboard a customer?
+
+            .step.slide(data-x='6000')
+                h2 What do I want every user to experience after signing up?
+
+            .step.slide(data-x='8000')
+                h2 How will I know when onboarding works?
+
+            .step.slide(data-x='10000')
+                h1 Onboarding?
+
+                //- The deliberate process of improving a person's success with a product or service.
+                //- Investing in this first point of contact pays dividends in activation, retention, referrals,
+                //- and customer support.
+
+                //- The thesis: WOW moments.
+
+                //- Case Study: Ghost
+                //- Previously thought that publishing a post was the WOW moment for customers. They were wrong, that was the WOW moment for the product manager. That's what says, "Yep, the software works." The WOW moment was when someone could look at a site that belonged to them, that they built. It's their identity online.
+                //- Embracing that improved their conversion by 1000% and improved their paid funnel by 370%.
+
+
+            .step.slide(data-x='12000')
+                h1 Design patterns
+
+                //- Annotated - overlayed product commentary.
+                //- Embedded - training interspersed throughout the product.
+                //- Dedicated - siloed training/experiences.
+                //- Human - actual people.
+
+                //- Like in all forms of design, these patterns are tools. You'll want to choose
+                //- the right one for the job at hand.
+
+            .step.slide(data-x='14000')
+                h1 Simple Tactics
+
+                //- Onboard people manually. You'll learn so much about your customer, and you can
+                //- build that into your product's onboarding later.
+
+                //- Collect feedback constantly to surface friction points in your product.
+
+                //- Analyze your best customers. What parts of the product are they using most? How
+                //- would they describe your product's main benefit? That's your WOW moment.
+
+            .step.slide(data-x='16000')
+                h1 Measuring Effectiveness
+
+                //- Put systems in place to measure your key onboarding metrics:
+                //-     - Activation (rate and duration)
+                //-     - Engagement (pre- and post-activation)
+                //-     - Conversion
+                //-     - Retention
+
+                //- Case Study: Storyboard That
+                //- Knew that their WOW moment was creating a storyboard. If they could just get
+                //- more people to create storyboards, they could convert more of them to paid customers.
+                //- Made one simple change to drive users to create a storyboard right away, saw a 2X increase
+                //- in conversion rate vs the control.
+
+            .step.slide(data-x='16000')
+                h1 Your Product Changes
+                p So should your onboarding process.
+
+                //- Account management and customer success teams are great for sussing this out. They don't
+                //- say the same thing to every customer, and they adapt what they say over time.
+
+                //- Likewise, your onboarding process should change with it. Make sure to introduce new features so people are up to speed.
+
+                //- Case Study: Litmus
+
+
+            //- .step.slide(data-x='6000')
+            //-     img(src='http://appcues.com/images/zendesk.png')
+            //-     h2 Proactive Support Calls
+            //-     p Zendesk found that human interaction was critical to customer success.
+
+            //- #fin.step.slide.accented(data-x='1500', data-y='8000', data-z='3000', data-scale='4')
+            //-     h1 Thank you
+
+        script(type='text/javascript', src='#{ASSET_PATH}/impress.js')
+        script.
+            impress().init();
