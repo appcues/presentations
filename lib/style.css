@@ -1,8 +1,17 @@
 .accent {
-  color: #2ba6cb;
+  color: #4baad3;
 }
 .serif {
   font-family: Merriweather, Georgia, serif;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
 }
 body {
   font-size: 100%;
@@ -16,13 +25,13 @@ h5,
 h6,
 p {
   font-family: Lato, Open Sans, Source Sans Pro, Helvetica, Arial, sans-serif;
-  font-weight: 100;
+  font-weight: 200;
 }
 h1 {
   font-size: 4em;
 }
 blockquote {
-  border-left: 0.3em solid #2ba6cb;
+  border-left: 0.3em solid #4baad3;
   font-size: 2em;
   padding: 0 0 0 1em;
   font-style: italic;
@@ -49,7 +58,7 @@ blockquote + .attrib {
   text-align: center;
 }
 .slide.accented {
-  background-color: #2ba6cb;
+  background-color: #4baad3;
 }
 .slide.accented * {
   color: white;
@@ -59,7 +68,7 @@ blockquote + .attrib {
 }
 .slide.numbered-set .count {
   font-size: 10em;
-  background-color: #2ba6cb;
+  background-color: #4baad3;
   display: inline-block;
   padding: 0.1em;
   text-align: center;
@@ -92,7 +101,7 @@ blockquote + .attrib {
   text-align: right;
 }
 .slide .label-box {
-  background-color: #2ba6cb;
+  background-color: #4baad3;
   display: inline-block;
   padding: 0.1em;
   text-align: center;
@@ -103,4 +112,16 @@ blockquote + .attrib {
   border: 1px solid #cccccc;
   border-radius: 6px;
   padding: 10px 0;
+}
+h1.header-formal,
+h2.header-formal,
+h3.header-formal,
+h4.header-formal,
+h5.header-formal,
+h6.header-formal {
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 0 20px 10px;
+  border-bottom: 1px solid #ddd;
 }
